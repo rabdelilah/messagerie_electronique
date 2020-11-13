@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	<persistence-unit name="Mail_V_Jpa">
+		<class>beans.Relationcontacte</class>
+		<class>beans.Privilage</class>
+		<class>beans.Groupe</class>
+		<class>beans.Contact</class>
+		<class>beans.Config</class>
+		<class>beans.Admin</class>
+		<class>beans.Message</class>
+	
+	 <properties>
+		   <property name="toplink.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+           <property name="toplink.jdbc.url" value="jdbc:derby:mail"/>
+           <property name="toplink.jdbc.user" value=""/>
+           <property name="toplink.jdbc.password" value=""/>
+     </properties>
+	</persistence-unit>
+</persistence>
